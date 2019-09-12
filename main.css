@@ -1,3 +1,23 @@
 body {
     background: rgba(167, 170, 5, 0.192);
+    text-align: center;
+}
+
+#root {
+    background: rgba(102, 192, 19, 0.938);
+    border: solid;
+    font-family: Optima;
+    font-size: 20px;
+    position: relative;
+    padding: 40px;
+    margin: auto;
+    display: inline-block;
+    /* text-align: center; */
+    height: 100px;
+    width: 100px;
+    margin-top: 3em;
+}
+
+#root p {
+    text-align: center;
 }
