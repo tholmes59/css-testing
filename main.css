@@ -8,16 +8,25 @@ body {
     border: solid;
     font-family: Optima;
     font-size: 20px;
-    position: relative;
+    /* position: relative; */
     padding: 40px;
-    margin: auto;
-    display: inline-block;
+    margin: 10px;
+    /* display: inline-block; */
     /* text-align: center; */
-    height: 100px;
-    width: 100px;
+    height: 800px;
+    max-width: 100%;
     margin-top: 3em;
 }
 
 #root p {
     text-align: center;
+}
+
+.next {
+    height: 800px;
+    max-width: 100%;
+    margin-top: 3em;
+    border: solid;
+    margin: 3em;
+    
 }
