@@ -5,5 +5,45 @@
 }
 
 body {
-    background: whitesmoke;
+    background: rgba(143, 141, 141, 0.233);
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas: "box1 box1 box1" "box2 box3 box4";
+    margin: 10px;
+}
+
+.box1, .box2, .box3, .box4 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #BFBFBF;
+    font-size: 3em;
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #aaaaaa; 
+}
+
+.box1 {
+    grid-area: box1;
+    background: white;
+}
+
+.box2 {
+    grid-area: box2;
+    background: white;
+}
+
+.box3 {
+    grid-area: box3;
+    background: white;
+}
+
+.box4 {
+    grid-area: box4;
+    background: white;
 }
