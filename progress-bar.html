@@ -18,9 +18,24 @@
           </div>
 
           <br>
-<button onclick="progress(10)">Click Me</button> 
+        <button onclick="progress(2)">Click Me</button> 
 
 
-
+        <script>
+                function progress(seconds) {
+                    console.log('clicked')
+                    const elm = document.getElementById("myBar")
+                    let width = 0;
+                    const int = setInterval(() => {
+                        width++;
+                        elm.style.width = width + '%';
+                        elm.innerHTML = width + '%';
+                    
+                        if (width >=100) {
+                            clearInterval(int)
+                        }
+                    }, (seconds*1000)/100)
+                }
+            </script>
     </body>
 </html>
